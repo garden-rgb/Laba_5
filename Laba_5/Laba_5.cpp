@@ -101,7 +101,7 @@ int main()
 		cin >> num;
 		cout << '\n';
 		switch (num) {
-		case 1:
+		case 1:		// заполнение стека
 		{
 			cout << "Enter the stack size" << endl;
 			int size;
@@ -112,7 +112,7 @@ int main()
 			}
 			break;
 		}
-		case 2:
+		case 2:		//удаление элемента 
 		{
 			int a;
 			my_stack = pop(my_stack, a);
@@ -120,12 +120,12 @@ int main()
 			system("pause");
 			break;
 		}
-		case 3:
+		case 3:		// очистка стека
 		{
 			deleteAll(&my_stack);
 			break;
 		}
-		case 4:
+		case 4:		//удаление элементов с четными числами
 		{
 			system("cls");
 			cout << "Old stack:" << endl;
@@ -141,7 +141,7 @@ int main()
 			deleteAll(&my_stack);
 			return 0;
 		}
-		case 6:
+		case 6:		//сортировка
 		{
 			sortStack(my_stack);
 		}
