@@ -53,7 +53,7 @@ void sortStack(Stack* p) {
 	}
 }
 
- Stack* DelEven(Stack* p) {
+ void DelEven(Stack* p) {	//функция удаления четных чисел
 	Stack* t = p;
 	Stack* t1 = p;
 	while (t != NULL) {
@@ -65,7 +65,7 @@ void sortStack(Stack* p) {
 			if (t == p) {
 				p = p->next;
 				delete t;
-				return p;
+				return p;	//ошибка тут
 			}
 			else {
 				t1->next = t->next;
